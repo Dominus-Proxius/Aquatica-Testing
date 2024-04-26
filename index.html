@@ -1,17 +1,49 @@
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 128px); /* Adjusting height to center the content */
+  }
+
+  h1 {
+    margin-top: 0; /* Removing default margin for h1 */
+  }
+
+  .form__input {
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .left-margin {
+    margin-left: 20px; /* Adjust margin as needed */
+  }
+</style>
+
 <script src="/uv/uv.bundle.js" defer></script>
 <script src="/uv/uv.config.js" defer></script>
 <script src="/register-sw.js" defer></script>
 <script src="/search.js" defer></script>
 <script src="index.js" defer></script>
 <script src="/error.js" defer></script>
-
-<center style="top: 128px"><h1>Char-UV</h1>
-<form id="uv-form"">
-            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
-            <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
-          </form>
-          <div class="desc left-margin">
-            <p id="uv-error"></p>
-            <pre id="uv-error-code"></pre>
-</center>
-
+<center><h1>Char-UV</h1></center>
+<div class="centered" style="margin-top: 128px;">
+  <center>
+  <form id="uv-form">
+    <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+    <input id="uv-address" type="text" placeholder="Search Google or type a URL" class="form__input"/>
+  </form>
+  <div class="desc left-margin">
+    <p id="uv-error"></p>
+    <pre id="uv-error-code"></pre>
+  </div>
+</div>
