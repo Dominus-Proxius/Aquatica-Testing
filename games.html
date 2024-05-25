@@ -1,1 +1,46 @@
-<iframe src="https://cool.blinklab.com/games/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="100%px" width="100%px" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embed Games</title>
+  <style>
+    .game-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .game-item {
+      margin: 10px;
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      text-align: center;
+      line-height: 200px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Games</h1>
+  <div id="game-container" class="game-container"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const games = [
+        { name: 'Fortnite Mobile', url: 'https://cool.blinklab.com/games/fortnite-mobile' },
+
+      ];
+
+      const container = document.getElementById('game-container');
+
+      games.forEach(game => {
+        const gameItem = document.createElement('div');
+        gameItem.className = 'game-item';
+        gameItem.textContent = game.name;
+        gameItem.onclick = () => window.location.href = game.url;
+        container.appendChild(gameItem);
+      });
+    });
+  </script>
+</body>
+</html>
