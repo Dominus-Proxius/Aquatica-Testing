@@ -13,7 +13,6 @@
     <h1 id="title1">Kewl Cat</h1>
 </div>
 <title>Kewl Cat V2</title>
-    <iframe id="frame" src="" style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; border: none; overflow: hidden; display: none;"></iframe>
   <form id="uv-form" style="text-align: center; width: 700px; margin: 128px auto 0;">
          <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
          <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input" style="width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; box-sizing: border-box;"/>
@@ -37,6 +36,6 @@
        
     </style>
     <script>function games() {
-        frame.src = "games.html";
+        window.location.href = "games.html";
     }</script>
 </body>
