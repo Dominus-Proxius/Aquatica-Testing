@@ -22,9 +22,15 @@
       fetch('https://cool.blinklab.com/games/')
         .then(response => response.text())
         .then(data => {
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = data;
+          const gameContent = tempDiv.querySelector('.your-target-element'); // Replace with actual target element
           const container = document.getElementById('game-container');
-          container.innerHTML = data;
-          container.querySelectorAll('a').forEach(a => a.target = '_blank');
+          if (gameContent) {
+            container.innerHTML = gameContent.innerHTML;
+          } else {
+            container.innerHTML = 'Unable to load games.';
+          }
         })
         .catch(error => {
           console.error('Error fetching content:', error);
