@@ -24,7 +24,6 @@
         .then(data => {
           const container = document.getElementById('game-container');
           container.innerHTML = data;
-          // Adjust styles if needed
           container.querySelectorAll('a').forEach(a => a.target = '_blank');
         })
         .catch(error => {
