@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Embed Games</title>
+  <title>Games</title>
   <style>
     #game-container {
-      width: 600px;
-      height: 400px;
+      width: 100%;
+      height: 800px;
       overflow: auto;
       border: 1px solid #ccc;
     }
@@ -15,16 +15,22 @@
 </head>
 <body>
   <h1>Games</h1>
-  <div id="game-container"></div>
+  <div id="game-container">Loading games...</div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       fetch('https://cool.blinklab.com/games/')
         .then(response => response.text())
         .then(data => {
-          document.getElementById('game-container').innerHTML = data;
+          const container = document.getElementById('game-container');
+          container.innerHTML = data;
+          // Adjust styles if needed
+          container.querySelectorAll('a').forEach(a => a.target = '_blank');
         })
-        .catch(error => console.error('Error fetching content:', error));
+        .catch(error => {
+          console.error('Error fetching content:', error);
+          document.getElementById('game-container').innerHTML = 'Error loading games.';
+        });
     });
   </script>
 </body>
