@@ -11,7 +11,7 @@ Aquatica is a web proxy designed to bypass school filters, enabling access to ga
 - **Watch Movies**: Watch your favorite movie. (Coming Soon)
 
 ## Deployment
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FKewlUB%2FAquatica%2F&project-name=aquatica&repository-name=aquatica)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FDominus-Proxius%2FAquatica-Testing%2F&project-name=aquatica&repository-name=aquatica-testing)
 
 ## Installation
 
