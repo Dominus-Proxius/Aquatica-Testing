@@ -40,6 +40,6 @@ To get started with Polar Proxy, follow these steps:
 Usage:
    ```
    1. Enter URL: Type the URL of the website you want to visit in the provided input box.
-   2. Browse Anonymously: Click on the “Go” button to access the site through Polar Proxy.
+   2. Browse Anonymously: Click Enter to access the site through Aquatic.
    3. Enjoy Unrestricted Access: Navigate through the unblocked website and play games freely.
 ```
