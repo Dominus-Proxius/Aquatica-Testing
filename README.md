@@ -1,6 +1,6 @@
-# Polar Proxy
+# Pulsar Proxy
 
-Polar Proxy is a web proxy designed to bypass school filters, enabling access to games and other blocked websites. Built for the Titanium Network Proxathon 2024, Polar Proxy aims to provide a seamless and secure browsing experience.
+Pulsar Proxy is a web proxy designed to bypass school filters, enabling access to games and other blocked websites. Built for the Titanium Network Proxathon 2024, Pulsar Proxy aims to provide a seamless and secure browsing experience.
 
 ## Features
 
