@@ -19,7 +19,7 @@ To get started with Polar Proxy, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone [https://github.com/KewlUB/Aquatica.git]
-   cd aquatic
+   cd aquatica
    ```
 
 2. **Install dependencies:**
